@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+
+  .text {
+    font-weight: 200;
+  }
+
+  .title {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .actions {
+    margin: 32px 0;
+
+    .get-started {
+      border-radius: $radius;
+      padding: $padding;
+  
+      background-color: $primary-color;
+      color: white;
+  
+      &:hover {
+        box-shadow: $shadow;
+      }
+    }
+  }
+
+  .image {
+    mask-image: linear-gradient(black,transparent);
+    text-align: center;
+    img {
+      width: 80%;
+      box-shadow: $shadow;
+    }
+  }
+}
